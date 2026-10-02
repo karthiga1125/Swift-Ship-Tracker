@@ -57,3 +57,65 @@ Email alerts and templates, Batch Apex, reports and dashboards, Experience Cloud
 - `Parcel_ID__c ... permission` error: deploy the whole `force-app` folder, not a single file, so the order resolves.
 - Tabs require a `<motif>` (already included as `Custom9: Gears`). If Salesforce rejects it, pick any valid icon value.
 - Flow not visible to the agent: re-run `sf org assign permset --name Swift_Ship` for the agent user, or check Flow access.
+
+---
+
+# 📸 Project Screenshots
+
+## 1. Delivery Custom Object
+
+The Delivery custom object is created in Salesforce Object Manager to manage delivery-related information.
+
+![Delivery Object](screenshots/delivery-object.png)
+
+---
+
+## 2. Parcel Custom Object
+
+The Parcel custom object stores parcel tracking information such as Parcel ID, status, weight, and estimated delivery date.
+
+![Parcel Object](screenshots/parcel-object.png)
+
+---
+
+## 3. Parcel Details Flow
+
+The Parcel Details Flow retrieves parcel information and checks whether the requested parcel exists.
+
+![Flow Builder](screenshots/flow-builder.png)
+
+---
+
+## 4. Prompt Builder
+
+Prompt Builder is used to retrieve and format parcel tracking information.
+
+![Prompt Builder](screenshots/prompt-builder.png)
+
+---
+
+## 5. Agentforce Parcel Tracking
+
+The SwiftShip Tracker Agentforce agent allows users to track parcels using the Parcel ID.
+
+![Agentforce Parcel Tracking](screenshots/agentforce-tracking.png)
+
+---
+
+# 🛠️ Technologies Used
+
+- Salesforce Developer Edition
+- Salesforce CLI
+- Apex
+- Salesforce Flow
+- Prompt Builder
+- Agentforce
+- Custom Objects
+- Git
+- GitHub
+
+---
+
+# 🎯 Project Objective
+
+SwiftShip Tracker is a Salesforce-based parcel tracking system that manages parcel and delivery information and provides AI-powered parcel tracking through Agentforce.
